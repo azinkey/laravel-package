@@ -53,3 +53,5 @@ Make a fresh start
 25) Add a route in app/Admin/routes.php： $router->resource('users', UserController::class);
 
 26) php artisan storage:link
+
+27) Add Disk in config/filesystems.php, 'admin' => ['driver' => 'local','root' => storage_path('app/public'),'url' => env('APP_URL').'/storage','visibility' => 'public',], 
