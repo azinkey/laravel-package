@@ -47,3 +47,7 @@ Make a fresh start
 22) php artisan vendor:publish --tag=laravel-admin-summernote
 
 23) Extension config in config/admin.php  'summernote' => ['enable' => true, 'config' => ['height' => 500]],
+
+24) php artisan admin:make UserController --model=App\\User
+
+25) Add a route in app/Admin/routes.php： $router->resource('users', UserController::class);
