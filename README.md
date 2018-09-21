@@ -51,3 +51,5 @@ Make a fresh start
 24) php artisan admin:make UserController --model=App\\User
 
 25) Add a route in app/Admin/routes.php： $router->resource('users', UserController::class);
+
+26) php artisan storage:link
