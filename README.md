@@ -38,7 +38,7 @@ Make a fresh start
 
 18) php artisan migrate
 
-19) Open app/Providers/AppServiceProvider.php and call the Config::load()
+19) Open app/Providers/AppServiceProvider.php and call the Config::load() ( use Encore\Admin\Config\Config; )
 
 20) php artisan admin:import config
 
