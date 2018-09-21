@@ -10,38 +10,40 @@ Make a fresh start
 
 4) php artisan make:auth
 
-5) composer require encore/laravel-admin
+5) php artisan migrate
 
-6) php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
+6) composer require encore/laravel-admin
 
-7) php artisan admin:install
+7) php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
 
-8) SET config/admin.php configurations
+8) php artisan admin:install
 
-9) composer require laravel-admin-ext/media-manager -vvv
+9) SET config/admin.php configurations
 
-10) php artisan admin:import media-manager
+10) composer require laravel-admin-ext/media-manager -vvv
 
-11) Extension config  config/admin.php         'media-manager' => ['disk' => 'public'],
+11) php artisan admin:import media-manager
 
-12) composer require laravel-admin-ext/backup -vvv
+12) Extension config  config/admin.php         'media-manager' => ['disk' => 'public'],
 
-13) php artisan admin:import backup
+13) composer require laravel-admin-ext/backup -vvv
 
-14) composer require laravel-admin-ext/log-viewer -vvv
+14) php artisan admin:import backup
 
-15) php artisan admin:import log-viewer
+15) composer require laravel-admin-ext/log-viewer -vvv
 
-16) composer require laravel-admin-ext/config
+16) php artisan admin:import log-viewer
 
-17) php artisan migrate
+17) composer require laravel-admin-ext/config
 
-18) Open app/Providers/AppServiceProvider.php and call the Config::load()
+18) php artisan migrate
 
-19) php artisan admin:import config
+19) Open app/Providers/AppServiceProvider.php and call the Config::load()
 
-20) composer require laravel-admin-ext/summernote
+20) php artisan admin:import config
 
-21) php artisan vendor:publish --tag=laravel-admin-summernote
+21) composer require laravel-admin-ext/summernote
 
-22) Extension config in config/admin.php  'summernote' => ['enable' => true, 'config' => ['height' => 500]],
+22) php artisan vendor:publish --tag=laravel-admin-summernote
+
+23) Extension config in config/admin.php  'summernote' => ['enable' => true, 'config' => ['height' => 500]],
