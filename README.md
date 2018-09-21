@@ -1,7 +1,7 @@
 # laravel-package
 Make a fresh start
 
-# Laravel Setup with AdminPanel in 30 minuts
+# Laravel Setup with AdminPanel in 30 minutes
 1) composer create-project laravel/laravel <folder>
   
 2) SET permission storage/ 
